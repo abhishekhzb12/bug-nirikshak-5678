@@ -1,0 +1,22 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(97, 97, 10);
+    font-family: sans-serif;
+}
+.logo a::first-letter{
+    font-size: 40px;
+}
