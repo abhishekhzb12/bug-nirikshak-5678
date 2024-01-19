@@ -9,10 +9,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
     <style>
+       
         body {
-            background-color: #52c1f7;
+             background-color: #f4f7f8; 
             color: #0B2E44;
-            font-family: Yanone Kaffeesatz;
+            
         }
 
         #sum_card {
@@ -20,31 +21,49 @@
             justify-content: center;
             align-items: center;
             border: 25px solid #0B2E44;
-            /* width: max-content; */
+            width: max-content;
             border-radius: 28px;
             overflow: hidden;
             margin: auto;
-            
         }
-
-        /* #sum_container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        } */
         #sum_text{
             margin:0px 36px;
+            
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
         #sum_inst{
             display: flex;
-            justify-content: space-between;
+        }
+        #sum_videos{
+            margin-top: 30px;
+        }
+        .sum_card{
+            display: flex;
+            gap:30px;
+            align-items: center;
+            font-family: Yanone Kaffeesatz;
+            font-size: 1.2rem;
+            margin-top: 40px;
+
+        }
+        .sum_card>img{
+            height:100px;
+        }
+        #sum_container_vid{
+            margin:5px 30px;
+        }
+        #sum_btn{
+            padding:20px 25px;
+            background-color: #0B2E44;
+            color: white;
+            border:2px solid white;
+            border-radius: 10px;
         }
     </style>
 </head>
 
 <body>
-    <div id="sum_container">
+    <!-- <div id="sum_container">
         <div id="sum_card">
 
             <iframe width="1200" height="555"
@@ -60,8 +79,76 @@
             <div id="sum_inst">
                 <h2>Instructor:Albert</h2>
                 <h2>Duration:25min</h2>
+
             </div>
         </div>
        </div>
+       <hr> -->
+<div id="sum_videos">
+    <h1 style="text-align: center;">PlayList</h1>
+    <div id="sum_container_vid">
+        <div class="sum_card">
+            <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/T91p6pTPpSY?si=WtzlrHKFGYg9s8kC"></iframe>
+            <div class="description">
+                <h1>Title</h1>
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, sapiente. Impedit, repudiandae!</h3>
+                <h3>Duratiion:1hr</h3>
+                <h3>Rating:4.3</h3>
+                <button id="sum_btn">Watch Now</button>
+            </div>
+            
+        </div>
+      
+        <div class="sum_card">
+            <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/T91p6pTPpSY?si=WtzlrHKFGYg9s8kC"></iframe>
+            <div class="description">
+                <h1>Title</h1>
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, sapiente. Impedit, repudiandae!</h3>
+                <h3>Duratiion:1hr</h3>
+                <h3>Rating:4.3</h3>
+                 <button id="sum_btn">Watch Now</button>
+            </div>
+            
+        </div>
+        <div class="sum_card">
+            <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/T91p6pTPpSY?si=WtzlrHKFGYg9s8kC"></iframe>
+            <div class="description">
+                <h1>Title</h1>
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, sapiente. Impedit, repudiandae!</h3>
+                <h3>Duratiion:1hr</h3>
+                <h3>Rating:4.3</h3>
+            </div>
+            
+        </div>
+        <div class="sum_card">
+            <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/T91p6pTPpSY?si=WtzlrHKFGYg9s8kC"></iframe>
+            <div class="description">
+                <h1>Title</h1>
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, sapiente. Impedit, repudiandae!</h3>
+                <h3>Duratiion:1hr</h3>
+                <h3>Rating:4.3</h3>
+            </div>
+            
+        </div>
+        <div class="sum_card">
+            <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/T91p6pTPpSY?si=WtzlrHKFGYg9s8kC"></iframe>
+            <div class="description">
+                <h1>Title</h1>
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, sapiente. Impedit, repudiandae!</h3>
+                <h3>Duratiion:1hr</h3>
+                <h3>Rating:4.3</h3>
+            </div>
+            
+        </div>
+       
+    </div>
+</div>
+      
+
 </body>
 </html>
