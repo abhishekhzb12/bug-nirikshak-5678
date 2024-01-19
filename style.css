@@ -1,10 +1,367 @@
-body{
+/* body{
     margin:0;
     font-family: Arial, sans-serif;
     color: white;
+} */
+
+/* -----------------------sujeet start------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: linear-gradient(90deg, #ffffff, #c9dfed);
+    /* background-color: #fff; */
+    color: #52c1f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid;
+    padding: 40px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(97, 97, 10);
+    font-family: sans-serif;
+}
+
+.logo a::first-letter {
+    font-size: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'PT Sans', sans-serif;
+    color: #52c1f7;
+    font-weight: 800;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #52c1f7;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    transform: scale(1.1);
+}
+
+.search input {
+    /* width: 150px; */
+    border: 1px solid #52c1f7;
+    border-radius: 20px;
+    padding: 6px 100px 6px 8px;
+    margin-left: -80px;
+    outline: none;
+}
+
+.signlogBtn a {
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 6px 28px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 500;
+}
+.signlogBtn a:nth-child(1){
+/* background: transparent; */
+background-color: #52c1f7;
+color: #fff;
+margin-right: 15px;
+}
+.signlogBtn a:nth-child(2){
+    background-color: #fff;
+    color: #52c1f7;
+    }
+
+/* -------------------- for login page------------------------- */
+
+#loginPage {
+    height: 100vh;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.7)), url(https://e0.pxfuel.com/wallpapers/765/243/desktop-wallpaper-cherry-blossom-widescreen-jpg-289-kb-cool-cherry-blossom-drawing.jpg);
+    ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.loginCard {
+    width: 480px;
+    height: 580px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    position: absolute;
+    top: 12%;
+    left: 60%;
+}
+
+.signin {
+    margin: 2.5rem;
+}
+
+.signin h1 {
+    font-size: 40px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+}
+
+.signin p {
+    color: #9098a8;
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.signin p a {
+    text-decoration: none;
+    color: blue;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.4rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
 }
 
 
+.loginForm label {
+    font-size: 13px;
+    color: #7f8494;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#loginEmail {
+    border: none;
+    padding: 8px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    outline: none;
+}
+
+#loginPassword {
+    border: none;
+    padding: 8px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    outline: none;
+}
+
+#loginBtn {
+    /* margin-right: 2.3rem; */
+    margin-top: 1.3rem;
+    padding: 8px;
+    font-size: 18px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    border-radius: 10rem;
+    background-color: #1473e6;
+}
+
+.loginCard hr {
+    margin-top: 1rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.buttons a button {
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    background: transparent;
+    width: 25rem;
+    padding: 6px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons a img:nth-child(1) {
+    width: 25px;
+}
+
+.buttons a img:nth-child(2) {
+    width: 20px;
+}
+
+.buttons a img:nth-child(3) {
+    width: 20px;
+}
+
+
+.gethelp {
+    margin-top: 1.5rem;
+    margin-left: 2.5rem;
+}
+
+.gethelp a {
+    text-decoration: none;
+    color: #2386eb;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* ---------------------------- sign-up page------------------------ */
+
+#signupPage {
+    height: 100vh;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.7)), url(https://e0.pxfuel.com/wallpapers/178/18/desktop-wallpaper-cherry-blossoms-dark-cherry-blossom.jpg);
+    ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.signupCard {
+    width: 480px;
+    height: 550px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    position: absolute;
+    top: 12%;
+    left: 60%;
+}
+
+.signupCard h1 {
+    font-size: 40px;
+    font-family: 'PT Sans', sans-serif;
+    margin-top: 4rem;
+    margin-left: 3rem;
+    font-weight: 500;
+}
+
+.socialIcons {
+    margin-top: 2.2rem;
+    margin-left: 2rem;
+}
+
+.socialIcons img {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 8px;
+    border-radius: 50%;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.socialIcons img:nth-child(1) {
+    width: 28px;
+}
+
+#signupPage hr {
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+.email {
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+}
+
+.email h5 {
+    font-weight: 400;
+    font-family: 'PT Sans', sans-serif;
+    margin-bottom: 0.4rem;
+}
+
+.email p {
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.email p a {
+    text-decoration: none;
+    color: blue;
+}
+
+.form {
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    color: #9098a8;
+    font-size: 12px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+}
+
+#email {
+    border: none;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    margin-right: 2.5rem;
+    padding: 8px;
+    margin-bottom: 1rem;
+    outline: none;
+}
+
+#password {
+    border: none;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    margin-right: 2.5rem;
+    padding: 8px;
+    outline: none;
+}
+
+.form button {
+    margin-right: 2.3rem;
+    margin-top: 1.5rem;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    border-radius: 10rem;
+    background-color: #1473e6;
+}
+
+/* button:hover{
+    transform: scale(1.1);
+} */
+
+
+
+/* -----------------------sujeet end------------------------------ */
+
+footer{
+    font-family: Arial, sans-serif;
+    color: white;
+}
 .R-footer{
     height: 400px;
     width: 100%;;
@@ -33,12 +390,12 @@ color: white;
    
 }
 
-/* .customer-support{ */
+/* .customer-support{ 
 display: flex;
 flex-direction: column;
 gap:10px;
-margin-top: 100px;
-/* } */
+margin-top: 100px; 
+ } */
 .R-footer .customer-support a {
     color: rgb(255, 255, 255);
     text-decoration: none; 
