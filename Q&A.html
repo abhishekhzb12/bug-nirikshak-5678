@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/df2bf8e1ca.js" crossorigin="anonymous"></script>
+    <title>Questions&Answers</title>
+    <!-- Add your CSS styles if necessary -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a{
+            color: white;
+        }
+        nav {
+            width: 100%;
+            height: 80px;
+            background-color: #299ce8;
+            display: flex;
+            justify-content: end; /* Adjusted to space items between each other */
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+        
+        .language-dropdown {
+            width: 200px;
+            height: 40px;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+        }
+        
+        
+        main {
+            max-width:100%;
+                      padding: 100px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #44becb;
+        }
+    
+        #qna-section {
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+        #user-name{
+            height: 30px;
+            width: 150px;
+        }
+        h2 {
+            color: #333;
+        }
+    
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    
+        button {
+            display: block;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    
+        button:hover {
+            background-color: #0056b3;
+        }
+    
+        #user-questions {
+            margin-top: 20px;
+        }
+    
+        p {
+            margin: 0;
+            padding: 10px;
+            background-color: #e1e1e1;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .R-box{
+            height: auto;
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items:center ;
+          
+        }
+        .R-box img{
+            height: 300px;
+            width: 300px;}
+
+            .R-box>div:hover{
+
+            color: #e86f29;
+            text-decoration: wavy;
+            font-size: large;
+
+        }.R-btn{
+           display: flex;
+           justify-content: space-around;
+        }
+        
+        .R-btn>a{
+            color: black;
+            height: 30px;
+            width: 200px;
+            border: 1px solid black;
+            padding: 10px;
+            display: flex;
+            gap: 5px;
+            text-decoration: none;
+            border-radius: 15px;
+        }
+        .R-btn>a img{
+            height: 25px;
+            width: 25px;
+        }
+        footer{
+            text-align: center;
+        }
+    </style>
+    
+</head>
+<body><nav>
+    <div class="language-dropdown">
+        <label for="language">Select Language:</label>
+        <select id="language" name="language">
+            <option value="en">English</option>
+            <option value="fr">French</option>
+            <option value="es">Spanish</option>
+            <option value="de">German</option>
+            <option value="it">Italian</option>
+            <option value="pt">Portuguese</option>
+            <option value="ja">Japanese</option>
+            <option value="ko">Korean</option>
+            <option value="zh">Chinese</option>
+            <option value="ru">Russian</option>
+            <option value="ar">Arabic</option>
+            <option value="hi">Hindi</option>
+            <option value="id">Indonesian</option>
+        </select>
+
+    </div>
+    <a href=""><i class="fa-solid fa-arrow-right-to-bracket"></i>Log In</a>
+</nav>
+    <main>
+        <!-- Your main content goes here -->
+
+        <!-- Sample Q&A Section -->
+        <section id="qna-section">
+            <h2>Question and Answer</h2>
+            <label for="user-name">Your Name:</label>
+            <input type="text" id="user-name" placeholder="Enter your name">
+            <textarea id="user-question" placeholder="Type your question here"></textarea>
+            <button id="submit-question">Submit Question</button>
+            <div id="user-questions"></div>
+        </section>
+    </main>
+<div class="R-box"><div><h3>Join the biggest community of language learners <span style="color: #299ce8;">for free</span></h3>
+    <h5>Sign up to ask our tutors any question and get helpful tips in your inbox.</h5>
+<div class="R-btn"><a href=""><img src="data:image/jpeg;base64,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" alt="abc.png">Join with Google</a>
+    <a href="https://www.facebook.com/login/"><img src="https://img.freepik.com/premium-vector/social-media-icon-illustration-facebook-facebook-icon-vector-illustration_561158-2134.jpg" alt="">Join with Facebook</a></div></div>
+<div>
+    <img src="https://img.freepik.com/free-vector/foreign-languages-translating-linguistics-science-machine-translation-university-students-exchange-program-language-learning-courses_335657-3283.jpg"alt="xyz.png">
+</div>
+    
+</div>
+    <footer>
+        <!-- Your footer content goes here -->   © 2024 Questions & Answers. All rights reserved.
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Add a function to handle user-submitted questions
+            function submitUserQuestion() {
+                const userName = document.getElementById("user-name").value;
+                const userQuestion = document.getElementById("user-question").value;
+
+                // Add your logic to handle user-submitted questions (store, display, etc.)
+
+                // For now, let's just display the user's name, question, and a default response in the user-questions div
+                const userQuestionsDiv = document.getElementById("user-questions");
+
+                // User's name and question
+                const questionParagraph = document.createElement("p");
+                questionParagraph.textContent = `${userName || 'Anonymous'}: ${userQuestion}`;
+                userQuestionsDiv.appendChild(questionParagraph);
+
+                // Default response
+                const responseParagraph = document.createElement("p");
+                responseParagraph.textContent = "Thank you for reaching out! You will receive an answer within 24 hours.";
+                userQuestionsDiv.appendChild(responseParagraph);
+
+                // Clear the input fields after submission
+                document.getElementById("user-name").value = "";
+                document.getElementById("user-question").value = "";
+            }
+
+            // Attach the function to the submit button
+            document.getElementById("submit-question").addEventListener("click", submitUserQuestion);
+        });
+    </script>
+</body>
+</html>
