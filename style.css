@@ -1,26 +1,24 @@
-/* body{
-    margin:0;
-    font-family: Arial, sans-serif;
-    color: white;
-} */
 
 /* -----------------------sujeet start------------------------ */
 
-* {
+*{
     margin: 0;
     padding: 0;
 }
 
 nav {
     background: linear-gradient(90deg, #ffffff, #c9dfed);
-    /* background-color: #fff; */
     color: #52c1f7;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     border: 1px solid;
-    padding: 40px;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
+
 
 nav ul {
     display: flex;
@@ -29,16 +27,17 @@ nav ul {
     list-style: none;
 }
 
-.logo a {
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: 600;
-    color: rgb(97, 97, 10);
-    font-family: sans-serif;
+.logo a img {
+    width: 200px;
+    height: 50px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateZ(0);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.logo a::first-letter {
-    font-size: 40px;
+.logo a img:hover {
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
 }
 
 nav ul li a {
@@ -46,7 +45,7 @@ nav ul li a {
     font-size: 18px;
     font-family: 'PT Sans', sans-serif;
     color: #52c1f7;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 nav ul li a::after {
@@ -65,32 +64,32 @@ nav ul li a:hover::after {
 }
 
 .search input {
-    /* width: 150px; */
     border: 1px solid #52c1f7;
     border-radius: 20px;
-    padding: 6px 100px 6px 8px;
-    margin-left: -80px;
+    padding: 8px 100px 8px 8px;
+    margin-left: 80px;
     outline: none;
 }
-
+.signlogBtn{
+    margin-left: 50px;
+}
 .signlogBtn a {
     text-decoration: none;
     border: 1px solid;
     border-radius: 20px;
-    padding: 6px 28px;
+    padding: 8px 28px;
     font-family: 'PT Sans', sans-serif;
     font-weight: 500;
 }
 .signlogBtn a:nth-child(1){
-/* background: transparent; */
-background-color: #52c1f7;
-color: #fff;
-margin-right: 15px;
+    background-color: #52c1f7;
+    color: #fff;
+    margin-right: 15px;
 }
 .signlogBtn a:nth-child(2){
     background-color: #fff;
     color: #52c1f7;
-    }
+}
 
 /* -------------------- for login page------------------------- */
 
@@ -367,3 +366,331 @@ color: #52c1f7;}
 
 
 /* -----------------------sujeet end------------------------------ */
+
+/* -----------------------Azad start------------------------------ */
+.bgImg{
+    height: auto;
+    width: 100%;
+    background: linear-gradient(45deg, #3498db, #e8b9b4, #ffffff);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;
+}
+.appName{
+    width: 40%;
+    text-align: center;
+}
+.appName img{
+    width: 30%;
+    height: 20%;
+}
+.appName h1{
+    font-size: 80px;    
+    font-weight: 600;
+}
+.appName h3{
+    font-size: 35px;
+    font-weight: 600;
+}
+.appName h5{
+    font-size: 18px;
+    font-weight: 200;
+}
+
+/* button start */
+.appName button {
+    position: relative;
+    border: 2px solid #fff;
+    background-color: #52c1f7;
+    border-radius: 20px;
+    color: #fff;
+    padding: 10px 25px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.appName button::before,
+.appName button::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 6px 12px rgba(240, 234, 234, 0.667);
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.appName button::before {
+    top: -5px;
+    left: -5px;
+    transform: rotate(-45deg) scale(1.05);
+    transform-origin: 0 0;
+}
+
+.appName button::after {
+    bottom: -5px;
+    right: -5px;
+    transform: rotate(-45deg) scale(1.05);
+    transform-origin: 100% 100%;
+}
+
+.appName button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.appName button:hover::before,
+.appName button:hover::after {
+    opacity: 1;
+    transform: rotate(0deg) scale(1.05);
+}
+
+.appName button:hover::before,
+.appName button:hover::after {
+    opacity: 1;
+    transform: rotate(0deg) scale(1.05);
+}
+
+/* button end */
+
+.subsBtn{
+    width: 50%;
+    text-align: center;
+    margin-right: 2.5rem;
+}
+.subsBtn img{
+    width: 60%;
+}
+.subsBtn p{
+    font-size: 15px;
+    color: #494343;
+    font-weight: 400;
+    padding: 10px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* ------------------------- Home-page end------------------------- */
+/* ------------------------- Slider start------------------------- */
+
+@mixin white-gradient {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 14));
+    }
+} 
+.slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  
+    &::before,
+    &::after {
+      @include white-gradient;
+      content: "";
+      height: 100px;
+      position: absolute;
+      width: 200px;
+      z-index: 2;
+    }
+  
+    &::after {
+      right: 0;
+      top: 0;
+      transform: rotateZ(180deg);
+    }
+  
+    &::before {
+      left: 0;
+      top: 0;
+    }
+  
+    .slide-track {
+      animation: scroll 40s linear infinite;
+      display: flex;
+      width: calc(250px * 14);
+    }
+  
+    .slide {
+      height: 100px;
+      width: 250px;
+    }
+}
+
+/* ------------------------- Slider end------------------------- */
+/* --------------------container start------------------------- */
+
+.container{
+    padding : 30px 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 1.5rem;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'PT Sans', sans-serif
+}
+.container_box{
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    border: 1px solid #e9ceef;
+    border-radius: 20px;
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    transition:  all .40s ease;
+}
+.container_box:hover{
+    transform: translateY(-15px);
+}
+.container_img img{
+    width: 70px;
+    height: 70px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.container_text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+.container_text h4{
+    font-size: 20px;
+}
+.container_text p{
+    font-size: 15px;
+}
+
+/* --------------------container end------------------------- */
+/* -------------------- categories page start ------------------------- */
+.categories{
+    font-family: 'PT Sans', sans-serif;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(90deg,#edc5c1, #ffffff, #edc5c1);
+}
+.center-text h5{
+    color: #e37c71;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 30px;
+    
+}
+.center-text h2{
+    font-size: 50px;
+    text-align: center;
+    color: #2e2f2f;
+    padding: 10px 0;
+}
+.categories-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 4rem;
+    margin : 0 30px;
+}
+.categories-img{
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(45deg,#e2dbdb, #ffffff);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 15px;
+}
+.categories-img img{
+    width: 180px;
+    height: 180px;
+    padding: 0 20px 0 20px;
+    border-radius: 50%;
+}
+.categories-img h3{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 0;
+    color: #2e2f2f;
+}
+.categories-img p{
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 0;
+    color: #2e2f2f;
+}
+/* -------------------- categories page end ------------------------- */
+/* -------------------- about page start ------------------------- */
+.about{
+    background: linear-gradient(45deg, #3498db, #e8b9b4, #ffffff);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: 'PT Sans', sans-serif;
+    padding: 40px 5%;
+    gap: 2rem;
+    align-items: center;
+}
+.about-img img{
+    width: 100%;
+    height: auto;
+}
+.about-text h2{
+    font-size: 50px;
+    line-height: 1.2;
+    color: black;
+    margin-bottom: 20px;
+}
+.about-text p{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+.about-text h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.about-text a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 40px;
+}
+.about-text a{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 40px;
+    background-color: #3498db;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    transition: all .40s ease;
+}
+.about-text a:hover{
+    background-color: #e37c71;
+    transform: scale(1.05);
+}
+/* -------------------- about page end ------------------------- */
+
+/* -----------------------Azad end------------------------------ */
