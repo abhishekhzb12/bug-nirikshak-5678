@@ -23,6 +23,7 @@
 .R-footer{
     font-family: Arial, sans-serif;
     color: white;
+    background: linear-gradient(180deg, #7f7d7d, #3498db);
     width: 100%;
     height: auto;
     gap: 50px;
@@ -221,10 +222,12 @@ gap: 20px;
     color: black;
     background: linear-gradient(90deg, #d88686, #508fb7);
     margin-left: 40px;
+    transition: width 0.5s ease;
     font-size: larger;
    }
   .R-Gametext>a>button:hover{
     width: 200px;
+    cursor: pointer;
     font-size: xx-large;
     color: #074463;
   }

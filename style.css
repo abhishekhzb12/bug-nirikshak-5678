@@ -581,6 +581,7 @@ color: #52c1f7;}
 .categories{
     font-family: 'PT Sans', sans-serif;
     width: 100%;
+    padding-bottom: 30px;
     height: auto;
     background: linear-gradient(90deg,#edc5c1, #ffffff, #edc5c1);
 }
@@ -698,7 +699,7 @@ color: #52c1f7;}
 .section2 {
     /* width: 100%; */
     padding: 20px 100px;
-    background-color: rgba(25, 25, 25, 0.3764705882);
+    background:linear-gradient(45deg, #3498db, #e8b9b4, #ffffff);
   }
   .section2 > div:nth-child(1) {
     text-align: center;
@@ -708,7 +709,7 @@ color: #52c1f7;}
     font-family: Oswald, sans-serif;
     font-size: 40px;
     font-weight: 600;
-    color: rgba(233, 6, 6, 0.8196078431);
+    color: #e37c71;;
   }
     #abhi_container{
     display: flex;
