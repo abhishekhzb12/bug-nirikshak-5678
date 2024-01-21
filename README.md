@@ -4,16 +4,17 @@
 
 ## Group Name
 
-Code Wizard
+Bug-Nirikshak
 
 ## Team Members
 
-- **Team Lead**: [Md Azad Ansari (fw29_024)]
+- **Team Lead**: [Abhishek Kumar (fw28_276)]
 - **Frontend Developers**:
-  1. [Supriya Hatele (fw28_263)]
-  2. [Pavan Kumar Vasantha (fw29_032)]
-  3. [Ravi Mishra (fw29_126)]
-  4. [Gaurav Dorle (fw28_199)]
+  1. [Renuka Jagrwal (fw29_183)]
+  2. [Md Azad Ansari (fw29_024)]
+  3. [Sujeet Kumar (fw29_048)]
+  4. [Sumit Kumar Jha (fw29_093)]
+  
 
 ## Project Duration
 
