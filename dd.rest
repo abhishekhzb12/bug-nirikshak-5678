@@ -1,0 +1,1 @@
+GET https://template-6.onrender.com/card
