@@ -694,3 +694,124 @@ color: #52c1f7;}
 /* -------------------- about page end ------------------------- */
 
 /* -----------------------Azad end------------------------------ */
+/* -----------------Abhishek css---------------------- */
+.section2 {
+    /* width: 100%; */
+    padding: 20px 100px;
+    background-color: rgba(25, 25, 25, 0.3764705882);
+  }
+  .section2 > div:nth-child(1) {
+    text-align: center;
+    /* margin-bottom: 50px; */
+  }
+  .section2 > div:nth-child(1) span {
+    font-family: Oswald, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: rgba(233, 6, 6, 0.8196078431);
+  }
+    #abhi_container{
+    display: flex;
+    font-family: arial;
+    overflow: scroll;
+    font-family: Arial, sans-serif;
+    }
+    #abhi_container::-webkit-scrollbar{
+    display: none;
+    }
+    #abhi_container>div{
+    /* border: 1px solid rgb(61, 51, 51); */
+    display: inline-block;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px 8px;
+    border-radius: 5px; 
+    margin: 2%;
+   }
+
+.image iframe{
+ width: 300px;
+ height: 170px;
+ border-top-right-radius: 5px;
+ border-top-left-radius: 5px;    
+}
+
+.title{
+
+ text-align: left;
+ padding: 10px 20px 10px 20px;
+ height: 60px;
+ 
+}
+
+.title h1{
+ font-size: 20px;
+}
+
+.des{
+/* border: 1px solid red; */
+display: flex;
+flex-direction: column;
+text-align: left;
+padding: 0px 20px 0px 20px;
+}
+.des>p:nth-child(1){
+display: none;
+/* border: 1px solid red; */
+}
+.des>p:nth-child(2){
+font-weight: bold;
+/* border: 1px solid red; */
+margin-top: 0px;
+}
+.des>p:nth-child(3){
+font-weight: bold;
+/* border: 1px solid red; */
+margin-top: 0px;
+}
+#abhi_container div button{
+ margin: 10px 10px 20px 20px;
+ /* background-color: white; */
+ border: 1px solid black;
+ border-radius: 5px;
+ padding:10px;
+ font-weight: bold;
+ width: 200px;
+}
+#abhi_container div button:hover{
+ background-color: black;
+ color: white;
+ transition: .5s;
+ cursor: pointer;
+}
+.modal-container {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+background-color: #fefefe;
+margin: 15% auto;
+padding: 20px;
+border: 1px solid #888;
+width: 80%;
+max-width: 600px;
+border-radius: 10px;
+}
+
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.close:hover {
+color: black;
+}
+
+  
