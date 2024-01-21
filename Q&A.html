@@ -21,11 +21,19 @@
             height: 80px;
             background-color: #299ce8;
             display: flex;
-            justify-content: end; /* Adjusted to space items between each other */
+            justify-content: space-between; /* Adjusted to space items between each other */
             align-items: center;
             position: sticky;
             top: 0;
         }
+        nav>img{
+            width: 200px;
+        height: 50px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        transform: translateZ(0);
+        transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+        margin-top: 10px;
+         }
         
         .language-dropdown {
             width: 200px;
@@ -138,6 +146,7 @@
     
 </head>
 <body><nav>
+    <img src="./Images/logo.jpeg">
     <div class="language-dropdown">
         <label for="language">Select Language:</label>
         <select id="language" name="language">

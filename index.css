@@ -7,8 +7,17 @@
     padding: 10px;
     position: relative;
     left: 1400px;
+    top:-110px;
     background-color: #52c1f7;
     color: black;
+}
+
+.R-Mainfooter{
+    background: linear-gradient(180deg, #7f7d7d, #3498db);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 .R-footer{
@@ -17,7 +26,12 @@
     width: 100%;
     height: auto;
     gap: 50px;
-    background: linear-gradient(180deg, #7f7d7d, #3498db);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+
 }
 .R-footer a {
     color: rgb(255, 255, 255);
@@ -67,7 +81,7 @@
     display: flex;
     height: auto;
     gap: 160px;
-    margin: 50px 0px 0px 250px;
+    /* margin: 50px 0px 0px 250px; */
 
 }
 
@@ -98,13 +112,13 @@
 .R-rect2 {
     display: flex;
     height: auto;
-    gap: 185px;
-    margin: 50px 0px 0px 250px;
+    gap: 140px;
+    /* margin: 50px 0px 0px 250px; */
 }
 
 .R-Apps {
     display: flex;
-    gap: 30px;
+    gap: 10px;
     margin-top: 40px;
     
 }
@@ -144,7 +158,7 @@
 }
 
 .R-contact {
-    margin-left: 70px;
+    /* margin-left: 70px; */
 }
 
 .R-contact>img {
@@ -161,3 +175,167 @@
     padding: 8px;
     font-size: small;
 }
+.R-gameSection{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background: linear-gradient(90deg, #d88686, #508fb7);
+    
+    
+}
+.R-Gametext{
+    width: 50%;
+    height: 500px;
+    text-align: center;
+    font-size: larger;
+    color: #043a5b;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 20px;
+
+}
+.R-Gametext>h1::first-letter{
+    color:#ea5656;
+}
+.R-gameImage{
+ width: 50%;
+
+}
+.R-gameImage>img{
+    
+   margin-left: 150px;
+   }
+   .R-gameImage>h3{
+    color: #074463;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: x-large;
+   }
+   .R-Gametext>a>button{
+    padding: 10px;
+    width: 150px;
+    border-radius: 9px;
+    color: black;
+    background: linear-gradient(90deg, #d88686, #508fb7);
+    margin-left: 40px;
+    font-size: larger;
+   }
+  .R-Gametext>a>button:hover{
+    width: 200px;
+    font-size: xx-large;
+    color: #074463;
+  }
+.R-Gametext>img{
+    width: 150px;
+    height: 150px;
+}
+.R-Gametext>h1:hover{
+    color: rgb(119, 103, 238);
+    font-size: 50px;
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+    .R-gameSection {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+
+    }
+    .R-gameImage{
+    margin-right: 380px;
+    }
+
+
+}
+@media all and (min-width: 320px) and (max-width: 480px) {
+    .R-gameSection {
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 90px;
+      
+    }
+    
+    .R-gameImage{
+        margin-right:300px;
+    }
+    .R-gameImage>img{
+      /* height: 600px; */
+      width: 200px;
+     
+
+        }
+   
+
+}
+/*............................................................. media query for footer............................................................. */
+@media all and (min-width: 481px) and (max-width: 768px) {
+    .R-footer{
+        /* height: auto; */
+        display: flex;
+        flex-direction: column;
+    }
+    .arrow{
+        display: none;
+    }
+.R-rect1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+.R-Apps{
+    display: flex;
+    flex-direction: column;
+   
+}
+.R-rect2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+}
+@media all and (min-width: 320px) and (max-width: 480px) {
+    .R-footer{
+        /* height: auto; */
+        display: flex;
+        flex-direction: column;
+    }
+   .arrow{
+    display: none;
+   }
+.R-rect1{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+.R-Apps{
+    display: flex;
+    flex-direction: column;
+   
+}
+.R-rect2{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+}
+
+
+
+
