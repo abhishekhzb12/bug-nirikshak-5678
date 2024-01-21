@@ -49,6 +49,7 @@ function createCourseCard(data) {
   const button = document.createElement("button");
   button.textContent = "Add to course";
   button.addEventListener("click",()=>{
+
       let obj={
         id:data.id,
         title:data.title,
@@ -56,11 +57,23 @@ function createCourseCard(data) {
         instructor:data.instructor,
         description:data.description,
         video:data.video,
-        image:data.image
+        image:data.image,
+        rating:data.rating
       };
+      
       let arr=JSON.parse(localStorage.getItem("course"))||[];
+      let bool=true;
+      for(let a=0;a<arr.length;a++){
+        if(arr[a].id===obj.id){
+          bool=false;
+          break;
+        }
+      }
+      if (bool) {
       arr.push(obj);
+      
       localStorage.setItem("course",JSON.stringify(arr))
+      }
       // console.log()
       button.innerHTML = "Added"
       openModal()

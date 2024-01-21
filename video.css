@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f4f7f8;
+    color: #0B2E44;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#sum_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 25px solid #0B2E44;
+    width: max-content;
+    border-radius: 28px;
+    overflow: hidden;
+    margin:50px auto;
+
+}
+
+#sum_text {
+
+    margin: 0px 69px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+
+#sum_inst {
+    display: flex;
+    margin: 22px 73px;
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    width: 49%;
+    flex-wrap: wrap;
+
+}
+
+#sum_videos {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.sum_card {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-top: 40px;
+
+}
+
+.sum_card>img {
+    height: 100px;
+}
+
+#sum_container_vid {
+    margin: 5px 30px;
+}
+
+.sum_btn {
+    padding: 16px 45px;
+    background-color: #0B2E44;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.sum_btn:hover {
+    background-color: #0f405f;
+    cursor: pointer;
+}
+
+.sum_rat {
+    font-size: 22px;
+}
+
+.sum_title {
+    color: rgb(236, 58, 58);
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 14px;
+    line-height: 27px;
+}
+
+.description>h1 {
+    margin: 16px 0px;
+}
+
+#cont_div {
+    width: 50%;
+}
+
+#cont_div>h1 {
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
