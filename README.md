@@ -1,5 +1,5 @@
 
-# Reliance Digital Clone Project
+# Bhasa World (Language Learning) Project
 <img src="logo.svg">
 
 ## Group Name
