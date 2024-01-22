@@ -21,7 +21,9 @@ bug-nirikshak-5678
 4 days
 ## Overview
 
-This project is a clone of the landing page of Reliance Digital, a leading electronics retail chain. The clone was created by a team of 5 members within a timeframe of 4 days. The project aimed to replicate the essential features and design elements of the original Reliance Digital landing page using HTML, CSS, and JavaScript. The collaborative effort was spearheaded by the group named "Code Wizard."
+
+The objective of a language learning website is to provide an engaging platform for users to learn and master a new language. It aims to offer effective, personalized lessons, interactive activities, and cultural insights. The website seeks to keep users motivated through gamification, provide flexibility in learning schedules, and foster a supportive community. It also incorporates tools for real-time communication and continuous feedback, ensuring a holistic and enjoyable language learning experience.
+Language learning landing page using HTML, CSS, and JavaScript. The collaborative effort was spearheaded by the group named "Bug Nirikshak."
 
 Preview the live template here: Wizard Group Live Demo  : (https://65ae1248e8f5d6f84a594efd--gilded-babka-e8f807.netlify.app)
 
