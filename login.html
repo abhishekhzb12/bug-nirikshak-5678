@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,43 +8,72 @@
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<div id="loginPage">
-    <div class="loginCard">
-        <div class="signin">
-            <h1>Log in</h1>
-            <p>New user? <a href="./signup.html">Create an account</a></p>
-        </div>
-<div class="loginForm">
-    <label for="email">Email address</label>
-    <input type="text" name="email" id="loginEmail">
-    <label for="password">Password</label>
-    <input type="password" name="password" id="loginPassword">
-    <button id="loginBtn">Log in</button>
-</div>
-<hr>
+    <div id="loginPage">
+        <div class="loginCard">
+            <div class="signin">
+                <h1>Log in</h1>
+                <p>New user? <a href="./signup.html">Create an account</a></p>
+            </div>
+            <div class="loginForm">
+                <label for="email">Email address</label>
+                <input type="text" name="email" id="loginEmail">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="loginPassword">
+                <button id="loginBtn">Log in</button>
+            </div>
+            <hr>
 
-<div class="buttons">
+            <div class="buttons">
 
-    <a href="https://www.google.com/"><button><img src="https://auth.services.adobe.com/img/social/round/google.svg" alt="google">  Continue with Google</button></a>
-        
-    <a href="https://www.facebook.com/"><button><img src="https://auth.services.adobe.com/img/social/round/facebook.svg" alt="fb">  Continue with Facebook</button></a>
-        
-        <a href="https://www.icloud.com/"><button> <img src="https://auth.services.adobe.com/img/social/round/apple.svg" alt="apple">  Continue with Apple</button></a>
+                <a href="https://www.google.com/"><button><img
+                            src="https://auth.services.adobe.com/img/social/round/google.svg" alt="google"> Continue
+                        with Google</button></a>
 
-    <!-- <a href="https://www.google.com/">Continue with Google</a>
+                <a href="https://www.facebook.com/"><button><img
+                            src="https://auth.services.adobe.com/img/social/round/facebook.svg" alt="fb"> Continue with
+                        Facebook</button></a>
+
+                <a href="https://www.icloud.com/"><button> <img
+                            src="https://auth.services.adobe.com/img/social/round/apple.svg" alt="apple"> Continue with
+                        Apple</button></a>
+
+                <!-- <a href="https://www.google.com/">Continue with Google</a>
     <a href="https://www.facebook.com/">Continue with Facebook</a>
     <a href="https://www.icloud.com/">Continue with Apple</a> -->
-</div>
+            </div>
 
-<div class="gethelp">
-    <a href="#">Get help signing in</a>
-</div>
+            <div class="gethelp">
+                <a href="#">Get help signing in</a>
+            </div>
+        </div>
     </div>
-</div>
+    <script>
+        let loginEmailInput = document.getElementById("loginEmail");
+        let loginPasswordInput = document.getElementById("loginPassword");
+        let loginBtn = document.getElementById("loginBtn");
+
+        loginBtn.addEventListener("click", () => {
+            let loginEmail = loginEmailInput.value;
+            let loginPassword = loginPasswordInput.value;
+
+            let users1 = JSON.parse(localStorage.getItem("users")) || [];
+            let isValid = false;
+            for (let i = 0; i < users1.length; i++) {
+                if ((users1[i].email == loginEmail) && (users1[i].password == loginPassword)) {
+                    isValid = true;
+                    break;
+                }
+            }
+            if (isValid) {
+                alert("Login successful!");
+                window.location.href = "index.html";
+            } else {
+                alert("Invalid email or password. Please check your credentials.");
+            }
+        })
+    </script>
 </body>
+
 </html>
-
-
-
-

@@ -90,12 +90,76 @@ nav ul li a:hover::after {
     background-color: #fff;
     color: #52c1f7;
 }
+.menu{
+    display: none;
+}
+/* #hamburger{
+    display: none;
+} */
+/* ------------------ media quary for nav bar ---------------*/
+/* -----------for large screen---------- */
 
+@media all and (min-width:768px) and (max-width:1024px){
+    .logo a img{
+        width: 160px;
+        height: 40px;
+        margin-left: -20px;
+    }
+    nav ul{
+        display: none;
+    }
+    .search input{
+        margin-left: 40px;
+        padding-right: 60px;
+    }
+    .menu{
+        display: block;
+    }
+}
+
+/* --------for small screen----------- */
+
+@media all and (min-width:320px) and (max-width:768px){
+    .logo a img{
+        width: 140px;
+        height: 35px;
+        margin-left: -20px;
+    }
+    nav ul{
+        display: none;
+    }
+    .search input{
+        /* margin-left: 20px;
+        padding-right: 40px; */
+        display: none;
+    }
+    .menu{
+        display: block;
+        /* margin-l: 10px; */
+    }
+    /* #hamburger{
+        display: none;
+    }
+    .menu:hover+#hamburger{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        color: #fff;
+        background-color: #52c1f7;
+        padding: 10px;
+        right: 40px;
+        top: 45px;
+    } */
+    .signlogBtn{
+        /* margin-left: -50px; */
+        display: none;
+    }
+}
 /* -------------------- for login page------------------------- */
 
 #loginPage {
     height: 100vh;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.7)), url(https://e0.pxfuel.com/wallpapers/765/243/desktop-wallpaper-cherry-blossom-widescreen-jpg-289-kb-cool-cherry-blossom-drawing.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.7)), url(https://c4.wallpaperflare.com/wallpaper/800/831/598/digital-art-neon-mountains-lake-wallpaper-preview.jpg);
     ;
     background-size: cover;
     background-position: center;
@@ -815,4 +879,12 @@ cursor: pointer;
 color: black;
 }
 
-  
+  @media all and (min-width:320px) and (max-width:768px){
+    .section2 > div:nth-child(1) span{
+font-size: 30px;
+text-align: center;
+margin-bottom: 50px;
+/* margin-right: 50px; */
+    }
+ 
+  }

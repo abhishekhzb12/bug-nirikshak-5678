@@ -6,7 +6,7 @@
     text-align: center;
     padding: 10px;
     position: relative;
-    left: 1400px;
+    left: 1000px;
     top:-110px;
     background-color: #52c1f7;
     color: black;
@@ -16,14 +16,15 @@
     background: linear-gradient(180deg, #7f7d7d, #3498db);
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
+   /* justify-content: space-evenly;
+    align-items:center;  */
+    /* gap: 60px; */
 }
 
 .R-footer{
     font-family: Arial, sans-serif;
     color: white;
-    background: linear-gradient(180deg, #7f7d7d, #3498db);
+    /* background: linear-gradient(180deg, #7f7d7d, #3498db); */
     width: 100%;
     height: auto;
     gap: 50px;
@@ -65,7 +66,6 @@
     font-size: medium;
 
 }
-
 
 .R-footer .R-customer-support a {
     color: rgb(255, 255, 255);
@@ -248,10 +248,15 @@ gap: 20px;
 
     }
     .R-gameImage{
-    margin-right: 380px;
+    margin-right: 390px;
     }
 
-
+    .R-gameImage>img{
+        /* height: 600px; */
+        width: 400px;
+       
+  
+          }
 }
 @media all and (min-width: 320px) and (max-width: 480px) {
     .R-gameSection {
@@ -274,6 +279,31 @@ gap: 20px;
         }
    
 
+}
+@media all and (min-width: 769px) and (max-width: 1024px) {
+    .R-gameSection {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+
+    }
+    .R-gameImage{
+    margin-right: 380px;
+    }
+
+}
+@media all and (min-width: 1025px) and (max-width: 1200px) {
+    .R-gameSection {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+
+    }
+    .R-gameImage{
+    margin-right: 380px;
+    }
 }
 /*............................................................. media query for footer............................................................. */
 @media all and (min-width: 481px) and (max-width: 768px) {
@@ -339,6 +369,68 @@ gap: 20px;
 }
 }
 
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .R-footer{
+        /* height: auto; */
+        display: flex;
+        flex-direction: column;
+    }
+    .arrow{
+        display: none;
+    }
+.R-rect1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 100px ;
+    
+}
+.R-Apps{
+    display: flex;
+    flex-direction: column;
+   
+}
+.R-rect2{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+    
+}
+}
 
 
+@media all and (min-width: 1025px) and (max-width: 1200px) {
+    .R-footer{
+        /* height: auto; */
+        display: flex;
+        flex-direction: column;
+    }
+    .arrow{
+        display: none;
+    }
+.R-rect1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 100px ;
+    
+}
+.R-Apps{
+    display: flex;
+    flex-direction: column;
+   
+}
+.R-rect2{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+    
+}
+}
 
