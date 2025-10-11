@@ -116,7 +116,7 @@ Feedback, contributions, and suggestions are welcome! Feel free to enhance and c
  
  <a href="https://www.linkedin.com/in/supriya-hatele-b0696b1bb" target="_parent">Supriya</a>
  
- <a href="https://www.linkedin.com/in/pavankumar25/" target="_parent">Pavan</a>
+ <a href="https://www.linkedin.com/in/sumit-kumar-jha-050156217" target="_parent">Sumit</a>
  
  <a href="https://www.linkedin.com/in/ravimishra007" target="_parent">Ravi</a>
 
